@@ -2,9 +2,12 @@ body, h1, p, button, a {
     font-family: $font;
 }
 
+
+// Figure
 .card>figure {
     width: $figure-width;
 }
+
 
 // Icons
 .bi-linkedin {
