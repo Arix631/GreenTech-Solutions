@@ -1,2 +1,7 @@
+// Importation de Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "home.scss";
+
+// Fichiers .scss
+@import "variables.scss";
+@import "animations.scss";
+@import "footer.scss";
