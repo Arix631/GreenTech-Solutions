@@ -1,3 +1,7 @@
+body, h1, p, button, a {
+    font-family: $font;
+}
+
 .card>figure {
     width: $figure-width;
 }
@@ -9,4 +13,20 @@
 
 .bi-instagram {
     color: $instagram-color;
+}
+
+// Card buttons
+.card-body>button {
+    background-color: $button-color;
+    border-color: $button-color;
+}
+
+.card-body>button:hover {
+    background-color: $button-color-hover;
+    border-color: $button-color-hover;
+}
+
+.card-body>button:focus {
+    background-color: $button-color-hover;
+    border-color: $button-color-hover;
 }
