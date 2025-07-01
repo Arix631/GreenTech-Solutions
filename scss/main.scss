@@ -4,5 +4,10 @@
 // Fichiers .scss
 @import "variables.scss";
 @import "equipe.scss";
+@import "temoignages.scss";
 @import "animations.scss";
 @import "footer.scss";
+
+body, h1, p, button, a {
+    font-family: $font;
+}
