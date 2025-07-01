@@ -11973,4 +11973,15 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.card > figure {
+  width: 60%;
+}
+
+.bi-linkedin {
+  color: #0077B5;
+}
+
+.bi-instagram {
+  color: #d62976;
 }/*# sourceMappingURL=main.css.map */
