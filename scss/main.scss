@@ -8,10 +8,22 @@
 @import "animations.scss";
 @import "footer.scss";
 
+
+// Style
 body, h1, p, button, a {
     font-family: $font;
 }
 
 .bg-color {
     background-color: $main-bg-color;
+}
+
+#my-form button {
+    background-color: $btn-primary;
+    border-color: $btn-primary;
+}
+
+#my-form button:hover {
+    background-color: $btn-primary-hover;
+    border-color: $btn-primary-hover;
 }
