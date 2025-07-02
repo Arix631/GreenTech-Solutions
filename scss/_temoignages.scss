@@ -1,0 +1,22 @@
+.carousel {
+    width: 50%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 50%;
+}
+
+/*
+Je spécifie la classe d'un parent (ici .carousel) juste avant la classe .carousel-caption pour forcer Bootstrap
+à accepter mes paramètres, là où Bootstrap applique ces paramètres en utilisant uniquement la classe .carousel-captions
+(voir avec l'inspection), ajouter une deuxième classe devant .carousel-caption rend ma déclaration plus spécifique et est
+donc plus forte face à celle de Bootstrap. 
+*/
+.carousel .carousel-caption {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
