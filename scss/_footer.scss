@@ -1,4 +1,5 @@
 footer {
+    position: relative;
     bottom: 0;
     background-color: $footer-bg-color;
 }
@@ -9,12 +10,38 @@ footer div h6 {
     text-transform: uppercase;
 }
 
-#newsletter-btn {
+#contact-us input::placeholder {
+    color: #fbfbfb;
+}
+
+#contact-us button {
     background-color: $btn-primary;
     border-color: $btn-primary;
 }
 
-#newsletter-btn:hover {
+#contact-us button:hover {
     background-color: $btn-primary-hover;
     border-color: $btn-primary-hover;
+}
+
+
+// Media queries
+@media screen and (min-width: 576px) {
+    footer #start>.single-box {
+        text-align: center;
+    }
+
+    #start>.single-box {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer #start>.single-box {
+        text-align: start;
+    }
+
+    #start>.single-box {
+        margin-bottom: 1rem;
+    }
 }
