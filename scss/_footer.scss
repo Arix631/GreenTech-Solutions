@@ -3,6 +3,12 @@ footer {
     background-color: $footer-bg-color;
 }
 
+footer div h6 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 #newsletter-btn {
     background-color: $btn-primary;
     border-color: $btn-primary;
