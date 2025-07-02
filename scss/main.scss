@@ -31,3 +31,11 @@ body, h1, p, button, a {
 iframe {
     max-width: 100%;
 }
+
+// Media queries
+@media screen and (max-width: 576px) {
+    #my-form {
+        max-width: 800px;
+        padding: 0 3em 0 3em;
+    }
+}
