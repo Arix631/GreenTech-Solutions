@@ -4,6 +4,13 @@
     animation-timing-function: ease-out;
 }
 
+.hero{
+    animation: fadeInUp 2s;
+    
+}
+
+
+
 @keyframes hoverRotate {
     from {
         transform: rotate(0deg);
@@ -13,4 +20,22 @@
         transform: rotate(360deg);
         opacity: 1;
     }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+       
+    }
+    50%{
+         transform: translateY(50px);
+    }
+    
+    to {
+        opacity: 1;
+        
+    }
+    
+    
 }
