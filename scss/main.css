@@ -11974,14 +11974,114 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .card > figure {
   width: 60%;
 }
 
 .bi-linkedin {
-  color: #0077B5;
+  color: #0077b5;
 }
 
 .bi-instagram {
   color: #d62976;
+}
+
+.card-body > button {
+  background-color: #186218;
+  border-color: #186218;
+}
+
+.card-body > button:hover {
+  background-color: #2cb42c;
+  border-color: #2cb42c;
+}
+
+.card-body > button:focus {
+  background-color: #2cb42c;
+  border-color: #2cb42c;
+}
+
+.carousel {
+  width: 50%;
+}
+
+.carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+}
+
+/*
+Je spécifie la classe d'un parent (ici .carousel) juste avant la classe .carousel-caption pour forcer Bootstrap
+à accepter mes paramètres, là où Bootstrap applique ces paramètres en utilisant uniquement la classe .carousel-captions
+(voir avec l'inspection), ajouter une deuxième classe devant .carousel-caption rend ma déclaration plus spécifique et est
+donc plus forte face à celle de Bootstrap. 
+*/
+.carousel .carousel-caption {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card figure > img:hover {
+  animation-name: hoverRotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes hoverRotate {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.3;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+footer {
+  bottom: 0;
+  background-color: #191919;
+}
+
+footer div h6, footer div .h6 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#newsletter-btn {
+  background-color: #186218;
+  border-color: #186218;
+}
+
+#newsletter-btn:hover {
+  background-color: #2cb42c;
+  border-color: #2cb42c;
+}
+
+body, h1, .h1, p, button, a {
+  font-family: "Roboto", "sans-serif";
+}
+
+.bg-color {
+  background-color: #242424;
+}
+
+#my-form button {
+  background-color: #186218;
+  border-color: #186218;
+}
+
+#my-form button:hover {
+  background-color: #2cb42c;
+  border-color: #2cb42c;
 }/*# sourceMappingURL=main.css.map */
