@@ -12068,6 +12068,13 @@ footer div h6, footer div .h6 {
   border-color: #2cb42c;
 }
 
+header nav {
+  background-color: #191919;
+}
+header a {
+  color: white !important;
+}
+
 body, h1, .h1, p, button, a {
   font-family: "Roboto", "sans-serif";
 }

@@ -1,0 +1,12 @@
+
+header{
+    nav{
+        background-color: $header-bg-color;
+        
+    }
+    a{
+         color: $header-color !important;
+    }
+
+}
+// la balise a ne recupere la couleur de son parent
