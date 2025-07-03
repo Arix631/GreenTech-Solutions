@@ -1,0 +1,13 @@
+.services-card {
+    .card{
+        transition: all 1s;
+        
+        
+    }
+    .card:hover{
+            scale: 1.1;
+            box-shadow: 10px 5px 5px rgba($color: $header-bg-color, $alpha: 0.2); // le premier chiffre correspond a x le 2eme a y , le 3eme a l'epaisseur du floue et le dernier a la couleur du floue
+    }
+    
+}
+
