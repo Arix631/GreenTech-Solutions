@@ -1,4 +1,4 @@
-// hoverRotate
+// Cards imgs : rotate on hover
 .card figure>img:hover {
     animation-name: hoverRotate;
     animation-duration: 1s;
@@ -17,7 +17,7 @@
 }
 
 
-// Cards animation
+// Cards : scale on hover
 .container-card {
   display: flex;
   flex-wrap: wrap;
@@ -41,3 +41,6 @@
     transform: scale(1.1);
     box-shadow: 0px 5px 25px #fbfbfb;
 }
+
+
+// Carousel : slide-in
