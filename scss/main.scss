@@ -1,13 +1,15 @@
+@import "variables.scss";
 // Importation de Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Fichiers .scss
-@import "variables.scss";
+
 @import "equipe.scss";
 @import "temoignages.scss";
 @import "animations.scss";
 @import "footer.scss";
 @import "header";
+@import "services";
 
 // Style
 body, h1, p, button, a {
