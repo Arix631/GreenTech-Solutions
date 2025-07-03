@@ -1,5 +1,10 @@
+.section-mb {
+    margin-bottom: $margin-bottom;
+}
+
 .carousel {
     width: 50%;
+    box-shadow: 0px 5px 30px #fbfbfb;
 }
 
 .carousel-item img {
@@ -10,8 +15,8 @@
 /*
 Je spécifie la classe d'un parent (ici .carousel) juste avant la classe .carousel-caption pour forcer Bootstrap
 à accepter mes paramètres, là où Bootstrap applique ces paramètres en utilisant uniquement la classe .carousel-captions
-(voir avec l'inspection), ajouter une deuxième classe devant .carousel-caption rend ma déclaration plus spécifique et est
-donc plus forte face à celle de Bootstrap. 
+(voir avec l'inspection), ajouter une deuxième classe devant .carousel-caption rend ma demande plus spécifique et rend cette
+dernière plus forte face à la déclaration de Bootstrap.
 */
 .carousel .carousel-caption {
     position: absolute;
