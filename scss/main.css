@@ -12007,8 +12007,13 @@ textarea.form-control-lg {
   border-color: #2cb42c;
 }
 
+.section-mb {
+  margin-bottom: 5em;
+}
+
 .carousel {
   width: 50%;
+  box-shadow: 0px 5px 30px #fbfbfb;
 }
 
 .carousel-item img {
@@ -12020,8 +12025,8 @@ textarea.form-control-lg {
 /*
 Je spécifie la classe d'un parent (ici .carousel) juste avant la classe .carousel-caption pour forcer Bootstrap
 à accepter mes paramètres, là où Bootstrap applique ces paramètres en utilisant uniquement la classe .carousel-captions
-(voir avec l'inspection), ajouter une deuxième classe devant .carousel-caption rend ma déclaration plus spécifique et est
-donc plus forte face à celle de Bootstrap. 
+(voir avec l'inspection), ajouter une deuxième classe devant .carousel-caption rend ma demande plus spécifique et rend cette
+dernière plus forte face à la déclaration de Bootstrap.
 */
 .carousel .carousel-caption {
   position: absolute;
@@ -12047,7 +12052,32 @@ donc plus forte face à celle de Bootstrap.
     opacity: 1;
   }
 }
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.target-card {
+  width: 100px;
+  aspect-ratio: 1;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transition-timing-function: ease;
+  transition: 0.2s;
+}
+
+.container-card:has(> *:hover) > *:not(:hover) {
+  transform: scale(0.9);
+}
+
+.container-card > *:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 25px #fbfbfb;
+}
+
 footer {
+  position: relative;
   bottom: 0;
   background-color: #191919;
 }
@@ -12058,12 +12088,20 @@ footer div h6, footer div .h6 {
   text-transform: uppercase;
 }
 
-#newsletter-btn {
+#contact-us input::-moz-placeholder {
+  color: #fbfbfb;
+}
+
+#contact-us input::placeholder {
+  color: #fbfbfb;
+}
+
+#contact-us button {
   background-color: #186218;
   border-color: #186218;
 }
 
-#newsletter-btn:hover {
+#contact-us button:hover {
   background-color: #2cb42c;
   border-color: #2cb42c;
 }
