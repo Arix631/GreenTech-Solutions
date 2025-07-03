@@ -27,15 +27,3 @@ body, h1, p, button, a {
     background-color: $btn-primary-hover;
     border-color: $btn-primary-hover;
 }
-
-iframe {
-    max-width: 100%;
-}
-
-// Media queries
-@media screen and (max-width: 576px) {
-    #my-form {
-        max-width: 800px;
-        padding: 0 3em 0 3em;
-    }
-}
