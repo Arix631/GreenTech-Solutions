@@ -18,10 +18,17 @@
 
 <body class="bg-color text-light">
     <main>
-        <section class="mt-5">
-            <h2 class="text-center text-light mb-5" id="contact">Contactez-nous</h2>
+        <section class="mt-5 text-light">
+            <h1 class="text-center mb-5 fw-medium" id="contact">Contactez-nous</h1>
 
-            <form class="form-div mx-auto mb-5 col-lg-3 col-sm-6" id="my-form">
+            <!--
+                Je ne dois surtout pas mettre mon form en d-flex, sinon le formulaire ne pourra pas être élargi.
+
+                - Je donne une largeur de 3 à gauche et à droite pour tout les écrans
+                - En format sm, je veux que mon élément prenne 8 colonnes.
+                - En format lg, mon formulaire prendra 5 colonnes.
+            -->
+            <form class="form-div mb-5 mx-3 col-sm-8 col-lg-5 mx-auto" id="my-form">
                 <div class="mb-4 mt-4">
                     <label for="last-name" class="form-label">Nom :</label>
                     <input type="text" class="form-control border border-dark-subtle rounded-2 p-2 bg-dark text-light" id="last-name" required>
@@ -60,13 +67,14 @@
         <section class="mt-2 mb-5 d-flex flex-column align-items-center w-100">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11133.624877850489!2d4.825019372127446!3d45.763048687283685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea560e406981%3A0xb4061284fef41f36!2sLes%20Cordeliers%2C%2069002%20Lyon!5e0!3m2!1sfr!2sfr!4v1751445895917!5m2!1sfr!2sfr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                class="mw-100" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
     <footer class="container-fluid w-100 d-flex flex-column text-center text-light pt-3 mx-auto">
         <div class="container mt-2">
+            <!-- Projet réalisé par : -->
             <div class="row d-flex flex-row justify-content-around" id="start">
                 <div class="col-lg-3 col-sm-6 single-box">
                     <h6>Projet réalisé par :</h6>
@@ -78,7 +86,9 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 single-box">
+                <!-- Menu (toutes les pages) -->
+                <!-- Lorsque que mon code est en largeur sm, je supprime les marges en haut et en bas (my-sm-0) -->
+                <div class="col-lg-3 col-sm-6 single-box my-5 my-sm-0">
                     <h6>Menu</h6>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
@@ -90,6 +100,7 @@
                     </ul>
                 </div>
 
+                <!-- Nous contacter -->
                 <div class="col-lg-3 col-sm-6 single-box">
                     <h6 class="mb-4">Nous contacter</h6>
                     <div class="input-group mb-3" id="contact-us">
